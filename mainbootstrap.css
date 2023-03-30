@@ -1,4 +1,9 @@
-
+#about,#service,#department,#doctor,#contact{
+	padding:70px 0px;
+}
+.bg{
+	background:#3fbbc0
+}
 											/*above navbar*/
 .bgcolor{
 	background-color:#3fbbc0;
@@ -10,7 +15,7 @@
 											/*navbar*/
 .navbar{
 	position:sticky !important;
-	z-index:1;
+	z-index:3;
 	width:100%;
 	top:0;
 }
@@ -38,10 +43,29 @@
 	border-top:4px solid #3fbbc0;
 	bottom:14% !important;
 	
+	
 }
 .carousel-caption p{
 	padding:5px 20px 20px 20px;
-	font-size:18px;
+	font-size:1rem;
+}
+@media(min-width:320px){
+	.carousel-caption p{
+		padding:5px 20px 20px 20px;
+		font-size:.5rem;
+	}
+}
+@media(min-width:600px){
+	.carousel-caption p{
+		padding:5px 20px 20px 20px;
+		font-size:1rem;
+	}
+}
+@media(min-width:1120px){
+	.carousel-caption p{
+		padding:5px 20px 20px 20px;
+		font-size:1rem;
+	}
 }
 
 .carousel-control-next-icon{
@@ -94,15 +118,16 @@
 .iconical:hover i{
 	color:white;
 }
+.carousel-item img{
+	min-height:60vh;
+}
 								/*count sec*/
 .shadow i{
 	color:#3fbbc0;
 	font-size:50px;
 	padding:5px 0px 0px 10px;
 }
-.shadow h5{
-	padding:10px;
-}
+
 .shadow p{
 	padding:10px 0px 20px 5px;
 }
@@ -113,12 +138,9 @@
 								/*appointment sec*/
 .appointment{
 	background-color:#3fbbc0;
-	padding:80px;
+	padding:80px 0px;
 }
-.2ndline{
-	border:2px solid #3fbbc0;
-	width:15%;
-}
+
 .service{
 	border:2px solid #3fbbc0;
 	width:5%;
@@ -149,6 +171,8 @@
 	color:white;
 	font-size:20px;
 	padding:5px 0px 15px 0px;
+	width:80%;
+	margin:auto;
 }
 .col-12 img{
 	width:100%;
@@ -178,6 +202,15 @@
 	color:white;
 	padding:5px 30px;
 	border-radius:5%;
+}
+.button01{
+	background-color:#3fbbc0;
+	border:1px solid #3fbbc0;
+	border-radius:5px;
+	margin-left: 6rem;
+}
+.button01 a{
+	color: #fff !important;
 }
 .button1:hover{
 	background:skyblue;
@@ -266,10 +299,7 @@
 	background-color:#f7fcfc;
 }
 
-.9thline{
-	border:2px solid #3fbbc0;
-	width:15%;
-}
+
 .head9{
 	font-size:32px;
 	font-weight:bold;
@@ -390,8 +420,8 @@
 	font-size:18px;
 	transition:all 1s ease;
 	opacity:0;
-	padding:0px 4px;
-	
+	padding:0px 4px; 
+	margin:0 auto;
 }
 .active span{
 	background-color:#3fbbc0 !important;
@@ -405,6 +435,8 @@
 }
 .social {
    padding:5px 70px;
+   width:100%;
+   display:flex;
 }
 .card-1:hover .social{
 	background-color:#ffffff69;
@@ -458,7 +490,15 @@
     border-radius: 50%;
     padding: 8px;
     border: 2px dotted #c5ebec;
-	margin-top:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin: auto;
+}
+.formsec .shadow{
+	padding:15px 0px;
+	margin-bottom:5%;
 }
 .formsec .shadow h5{
     font-size: 20px;
@@ -490,6 +530,23 @@
     height: 36px;
     transition: 0.3s;
 }
+.formlast form{
+	border:1px solid #ccc;
+	width:80%;
+	position:relative;
+	
+}
+.formlast form .submit{
+	position:Absolute;
+	right:0;
+	bottom:0;
+	top:0;
+}
+.formlast form input[type=email]{
+		border:none;
+		width:100%;
+		
+}
 
 
 
@@ -515,6 +572,9 @@
 }
 .ourservice li i{
 	color:skyblue;
+}
+.ourservice{
+	margin-top:5% !important;
 }
 	
 
